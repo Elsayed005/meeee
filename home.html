@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="c.png" type="image/png">
+    <title>DripCulture - Menu Orizzontale</title>
+    <!-- Link a Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link a FontAwesome per le icone -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #191b1d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            background-color: #ecf1f5;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-link {
+            color: #0f0f0f;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .nav-item .submenu {
+            display: none;
+            position: absolute;
+            background-color: #0f0f0f;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .nav-item:hover .submenu {
+            display: block;
+        }
+
+        .section-title {
+            margin: 40px 0;
+            text-align: center;
+            font-size: 2em;
+            color: #343a40;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            width: 300px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="c.png" alt="DripCulture Logo" class="logo">
+        <h1 class="h1">DripCulture</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html"><i class="fas fa-home icon"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class="fas fa-info-circle icon"></i>About</a>
+                    <div class="submenu">
+                        <p>Informazioni sulla nostra missione e valori.</p>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html"><i class="fas fa-cogs icon"></i>Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fas fa-envelope icon"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Cerca prodotti...">
+    </div>
+
+    <section id="products" class="container my-5">
+        <h2 class="section-title">I Nostri Prodotti</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://toplevelsport.it/cdn/shop/products/nike-m-nsw-club-jogger-ft-93172_1.jpg?v=1683116104"
+                        class="card-img-top img-fluid" alt="Nike Dunk High">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk High - 50 Years of Hip Hop</h5>
+                        <p class="card-text">Un'iconica sneaker che celebra i 50 anni dell'hip hop.</p>
+                        <p class="card-text"><strong>€119.99</strong></p>
+                        <a href="pants.html" class="btn btn-success">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.bowdoo.com/1879004-thickbox_default/464390.jpg" class="card-img-top img-fluid"
+                        alt="Nike Full Force Low">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Full Force Low</h5>
+                        <p class="card-text">Sneaker versatile con un design moderno.</p>
+                        <p class="card-text"><strong>€99.99</strong></p>
+                        <a href="sweatshirts.html" class="btn btn-success">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://sneakernews.com/wp-content/uploads/2023/01/nike-air-max-90-black-university-blue-FJ4218-001-5.jpg"
+                        class="card-img-top img-fluid" alt="Nike Air Max 90">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 90</h5>
+                        <p class="card-text">Iconica sneaker con un comfort senza pari.</p>
+                        <p class="card-text"><strong>€109.99</strong></p>
+                        <a href="shoes.html" class="btn btn-success">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DripCulture. Tutti i diritti riservati.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</html>
+</body>
